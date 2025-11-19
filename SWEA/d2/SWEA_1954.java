@@ -37,7 +37,7 @@ import java.util.StringTokenizer;
 
 // public calss Solution {
 
-public class SWEA_1954_d2 {
+public class SWEA_1954 {
     static BufferedReader br;
     static StringTokenizer st;
 
