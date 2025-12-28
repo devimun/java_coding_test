@@ -65,24 +65,30 @@ public class SWEA_3499 {
 		for (int i = 0; i < secLen; i++) {
 			sec[i] = sc.next();
 		}
-
-		boolean stop = false;
-		int currentF = 0;
-		int currentS = 0;
-		while (!stop) {
-			if (currentF < firLen) {
-				sb.append(" ").append(fir[currentF]);
-				currentF++;
-			}
-			if (currentS < secLen) {
-				sb.append(" ").append(sec[currentS]);
-				currentS++;
-			}
-
-			if (currentF == firLen) {
-				stop = true;
+		for (int i = 0; i < firLen; i++) {
+			sb.append(" ").append(fir[i]);
+			if (i < secLen) {
+				sb.append(" ").append(sec[i]);
 			}
 		}
+
+		// boolean stop = false;
+		// int currentF = 0;
+		// int currentS = 0;
+		// while (!stop) {
+		// if (currentF < firLen) {
+		// sb.append(" ").append(fir[currentF]);
+		// currentF++;
+		// }
+		// if (currentS < secLen) {
+		// sb.append(" ").append(sec[currentS]);
+		// currentS++;
+		// }
+
+		// if (currentF == firLen) {
+		// stop = true;
+		// }
+		// }
 		sb.append("\n");
 	}
 }
